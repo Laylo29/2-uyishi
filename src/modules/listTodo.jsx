@@ -22,8 +22,8 @@ const listTodo = ({todos, setTodos}) => {
               <strong>{item.title}</strong>
             </div>
             <div className="flex items-center gap-2">
-              <button onClick={handleEdit} className="bg-green-500 text-white p-2 rounded-md">Edit</button>
-              <button onClick={handleDelete} className="bg-red-500 text-white p-2 rounded-md">Delete</button>
+              <button onClick={() => handleEdit(item.id)} className="bg-green-500 text-white p-2 rounded-md">Edit</button>
+              <button onClick={() => handleDelete(item.id)} className="bg-red-500 text-white p-2 rounded-md">Delete</button>
             </div>
           </li>
         ))}

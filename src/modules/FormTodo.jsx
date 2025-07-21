@@ -2,6 +2,7 @@ const FormTodo = ({todos, setTodos}) => {
     function handleSubmit(e){
 
         e.preventDefault()
+
         const data = {
           id:todos[todos.length - 1]?.id ? todos[todos.length - 1].id + 1 : 1,
           title: e.target.todo.value,
