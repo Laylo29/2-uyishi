@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+body{
+    background-color: peru;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}
